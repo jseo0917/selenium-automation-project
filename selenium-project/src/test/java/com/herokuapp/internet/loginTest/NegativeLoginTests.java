@@ -8,6 +8,9 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.herokuapp.internet.base.TestUtilities;
+import com.herokuapp.internet.pages.LoginPage;
+import com.herokuapp.internet.pages.SecureAreaPage;
+import com.herokuapp.internet.pages.WelcomePageObject;
 
 public class NegativeLoginTests extends TestUtilities {
 	
@@ -15,24 +18,37 @@ public class NegativeLoginTests extends TestUtilities {
 	@Parameters({"username","password", "expectedMessage"})
 	@Test(priority =1)
 	public void negativeTests(@Optional("username") String username, String password, String expectedErrorMessage) {		
-		String url = "https://the-internet.herokuapp.com/login";		
-		driver.get(url);
 		
-		WebElement usernameElement = driver.findElement(By.id("username"));
-		usernameElement.sendKeys(username);
+		log.info("Negative test started.");
+		log.info("LOGIN PAGE STARTED.");
 		
-		WebElement passwordElement = driver.findElement(By.id("password"));
-		passwordElement.sendKeys(password);
+		/*************************
+		 * ACCESS TO WELCOME PAGE
+		 *************************/
 		
-		WebElement loginBtn = driver.findElement(By.xpath("//form[@id='login']/button[@class='radius']"));
+		WelcomePageObject welcomePageObject = new WelcomePageObject(driver, log);
 		
-		loginBtn.click();
+		welcomePageObject.openPage();
 		
-		WebElement flash = driver.findElement(By.id("flash"));
-                
-		String actualText = flash.getText();
-						
-		Assert.assertTrue(actualText.contains(expectedErrorMessage));
+		/*************************
+		 * ACCESS TO LOGIN PAGE
+		 *************************/
+		
+		LoginPage loginPage = welcomePageObject.clickFormAuthenticationLink();
+		
+		/*************************
+		 * ACCESS TO SECURE PAGE
+		 *************************/
+		
+		// Will attemp to put with incorrect user name or password
+		loginPage.logInWithIncorrectInfo(username, password);
+		
+		loginPage.waitForErrorMessage();
+		
+		String actualMessage = loginPage.getErrorMessage();
+		
+		Assert.assertTrue(actualMessage.contains(expectedErrorMessage));
+
 		
 	}	
 }

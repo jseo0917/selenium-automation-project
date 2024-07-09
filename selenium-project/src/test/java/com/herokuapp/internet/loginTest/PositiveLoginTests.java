@@ -6,27 +6,49 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.herokuapp.internet.base.TestUtilities;
+import com.herokuapp.internet.pages.LoginPage;
+import com.herokuapp.internet.pages.SecureAreaPage;
+import com.herokuapp.internet.pages.WelcomePageObject;
 
 public class PositiveLoginTests extends TestUtilities {
 
 	@Test
-	public void loginTest() {
-		String url = "https://the-internet.herokuapp.com/login";
+	public void loginTest(){
+
+		String username = "tomsmith";
+		String password = "SuperSecretPassword!";
 		
-		driver.get(url);
+		log.info("LOGIN PAGE STARTED.");
 		
-		WebElement username = driver.findElement(By.id("username"));
-		username.sendKeys("tomsmith");
+		/*************************
+		 * ACCESS TO WELCOME PAGE
+		 *************************/
 		
-		WebElement password = driver.findElement(By.id("password"));
-		password.sendKeys("SuperSecretPassword!");
+		WelcomePageObject welcomePageObject = new WelcomePageObject(driver, log);
 		
-		WebElement loginBtn = driver.findElement(By.xpath("//form[@id='login']/button[@class='radius']"));
-		loginBtn.click();
+		welcomePageObject.openPage();
 		
-		WebElement flash = driver.findElement(By.id("flash"));
+		/*************************
+		 * ACCESS TO LOGIN PAGE
+		 *************************/
 		
-		String actualText = flash.getText();
+		LoginPage loginPage = welcomePageObject.clickFormAuthenticationLink();
+		
+		/*************************
+		 * ACCESS TO SECURE PAGE
+		 *************************/
+		
+		SecureAreaPage secureAreaPage = loginPage.logIn(username, password);
+		
+		String currentURL = secureAreaPage.getCurrentPageSource();
+		// Check if the current URL matches with the secure page URL.
+		Assert.assertEquals(currentURL, secureAreaPage.getUrl());
+		
+		// Check if logout button is visible
+		Assert.assertTrue(secureAreaPage.isLogOutButtonVisible(By.xpath("//div[@id='content']//a[@href='/logout']")));
+		
+		// Text Check
+		String actualText = secureAreaPage.getFlashMessage(By.id("flash"));
 		
 		String expectedText = "You logged into a secure area!";
 		
@@ -36,5 +58,8 @@ public class PositiveLoginTests extends TestUtilities {
 		
 		Assert.assertTrue(logOutBtn.isDisplayed());
 		
+		/**************************
+		 * END POSITIVE TESTS
+		 **************************/
 	}
 }
