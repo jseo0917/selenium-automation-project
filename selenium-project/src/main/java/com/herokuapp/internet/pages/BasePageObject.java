@@ -1,7 +1,9 @@
 package com.herokuapp.internet.pages;
 
 import java.time.Duration;
+import java.util.List;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +11,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.apache.logging.log4j.Logger;
 
 public class BasePageObject {
 	protected WebDriver driver;
@@ -26,6 +27,10 @@ public class BasePageObject {
 	
 	protected WebElement find(By locator) {
 		return driver.findElement(locator);
+	}
+	
+	protected List<WebElement> findAll(By locator) {
+		return driver.findElements(locator);
 	}
 	
 	protected void click(By locator) {

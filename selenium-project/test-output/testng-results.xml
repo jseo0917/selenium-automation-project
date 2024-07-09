@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-09T00:34:31 CDT" name="NegativeLoginTestSuite" finished-at="2024-07-09T00:34:39 CDT" duration-ms="7991">
+  <suite started-at="2024-07-09T02:34:48 CDT" name="DropDownTestsSuite" finished-at="2024-07-09T02:34:57 CDT" duration-ms="8036">
     <groups>
     </groups>
-    <test started-at="2024-07-09T00:34:31 CDT" name="NegativeLoginTest-DD" finished-at="2024-07-09T00:34:37 CDT" duration-ms="5818">
-      <class name="com.herokuapp.internet.loginTest.NegativeLoginTests">
-        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.loginTest.NegativeLoginTests@61df66b6]" started-at="2024-07-09T00:34:31 CDT" name="setup" finished-at="2024-07-09T00:34:34 CDT" duration-ms="2903" status="PASS">
+    <test started-at="2024-07-09T02:34:48 CDT" name="DropDownTests_Val_1" finished-at="2024-07-09T02:34:52 CDT" duration-ms="3930">
+      <class name="com.herokuapp.internet.dropdowntest.DropdownTest">
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.dropdowntest.DropdownTest@61df66b6]" started-at="2024-07-09T02:34:49 CDT" name="setup" finished-at="2024-07-09T02:34:51 CDT" duration-ms="2418" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,84 +16,64 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@79079097]]>
+                <![CDATA[org.testng.TestRunner@445b295b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="negativeTests(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.herokuapp.internet.loginTest.NegativeLoginTests@61df66b6]" started-at="2024-07-09T00:34:34 CDT" name="negativeTests" finished-at="2024-07-09T00:34:36 CDT" duration-ms="2409" status="PASS">
+        <test-method signature="dropdownTests(int)[pri:0, instance:com.herokuapp.internet.dropdowntest.DropdownTest@61df66b6]" started-at="2024-07-09T02:34:51 CDT" name="dropdownTests" finished-at="2024-07-09T02:34:52 CDT" duration-ms="1359" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[incorrectUsername]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SuperSecretPassword!]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Your username is invalid!]]>
+                <![CDATA[1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- negativeTests -->
-        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.loginTest.NegativeLoginTests@61df66b6]" started-at="2024-07-09T00:34:36 CDT" name="shutDownDriver" finished-at="2024-07-09T00:34:37 CDT" duration-ms="464" status="PASS">
+        </test-method> <!-- dropdownTests -->
+        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.dropdowntest.DropdownTest@61df66b6]" started-at="2024-07-09T02:34:52 CDT" name="shutDownDriver" finished-at="2024-07-09T02:34:52 CDT" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutDownDriver -->
-      </class> <!-- com.herokuapp.internet.loginTest.NegativeLoginTests -->
-    </test> <!-- NegativeLoginTest-DD -->
-    <test started-at="2024-07-09T00:34:31 CDT" name="NegativeLoginTest-DC" finished-at="2024-07-09T00:34:39 CDT" duration-ms="7991">
-      <class name="com.herokuapp.internet.loginTest.NegativeLoginTests">
-        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.loginTest.NegativeLoginTests@7f3b84b8]" started-at="2024-07-09T00:34:31 CDT" name="setup" finished-at="2024-07-09T00:34:36 CDT" duration-ms="5110" status="PASS">
+      </class> <!-- com.herokuapp.internet.dropdowntest.DropdownTest -->
+    </test> <!-- DropDownTests_Val_1 -->
+    <test started-at="2024-07-09T02:34:52 CDT" name="DropDownTests_Val_2" finished-at="2024-07-09T02:34:57 CDT" duration-ms="4088">
+      <class name="com.herokuapp.internet.dropdowntest.DropdownTest">
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.dropdowntest.DropdownTest@7f3b84b8]" started-at="2024-07-09T02:34:52 CDT" name="setup" finished-at="2024-07-09T02:34:54 CDT" duration-ms="1570" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@4d1c00d0]]>
+                <![CDATA[org.testng.TestRunner@49e5f737]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="negativeTests(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.herokuapp.internet.loginTest.NegativeLoginTests@7f3b84b8]" started-at="2024-07-09T00:34:36 CDT" name="negativeTests" finished-at="2024-07-09T00:34:38 CDT" duration-ms="2013" status="PASS">
+        <test-method signature="dropdownTests(int)[pri:0, instance:com.herokuapp.internet.dropdowntest.DropdownTest@7f3b84b8]" started-at="2024-07-09T02:34:54 CDT" name="dropdownTests" finished-at="2024-07-09T02:34:56 CDT" duration-ms="2397" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tomsmith]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[IncorrectPassword]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Your password is invalid!]]>
+                <![CDATA[2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- negativeTests -->
-        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.loginTest.NegativeLoginTests@7f3b84b8]" started-at="2024-07-09T00:34:38 CDT" name="shutDownDriver" finished-at="2024-07-09T00:34:39 CDT" duration-ms="833" status="PASS">
+        </test-method> <!-- dropdownTests -->
+        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.dropdowntest.DropdownTest@7f3b84b8]" started-at="2024-07-09T02:34:56 CDT" name="shutDownDriver" finished-at="2024-07-09T02:34:57 CDT" duration-ms="116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutDownDriver -->
-      </class> <!-- com.herokuapp.internet.loginTest.NegativeLoginTests -->
-    </test> <!-- NegativeLoginTest-DC -->
-  </suite> <!-- NegativeLoginTestSuite -->
+      </class> <!-- com.herokuapp.internet.dropdowntest.DropdownTest -->
+    </test> <!-- DropDownTests_Val_2 -->
+  </suite> <!-- DropDownTestsSuite -->
 </testng-results>
