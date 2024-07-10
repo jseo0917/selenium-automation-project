@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="15" passed="14" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-09T02:34:48 CDT" name="DropDownTestsSuite" finished-at="2024-07-09T02:34:57 CDT" duration-ms="8036">
+  <suite started-at="2024-07-10T01:00:09 CDT" name="FullTestSuite" finished-at="2024-07-10T01:02:21 CDT" duration-ms="131503">
     <groups>
     </groups>
-    <test started-at="2024-07-09T02:34:48 CDT" name="DropDownTests_Val_1" finished-at="2024-07-09T02:34:52 CDT" duration-ms="3930">
-      <class name="com.herokuapp.internet.dropdowntest.DropdownTest">
-        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.dropdowntest.DropdownTest@61df66b6]" started-at="2024-07-09T02:34:49 CDT" name="setup" finished-at="2024-07-09T02:34:51 CDT" duration-ms="2418" status="PASS">
+    <test started-at="2024-07-10T01:00:09 CDT" name="CheckBoxesTests" finished-at="2024-07-10T01:00:16 CDT" duration-ms="6807">
+      <class name="com.herokuapp.internet.checkboxtest.CheckBoxTest">
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.checkboxtest.CheckBoxTest@61df66b6]" started-at="2024-07-10T01:00:10 CDT" name="setup" finished-at="2024-07-10T01:00:14 CDT" duration-ms="4940" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,14 +16,70 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@445b295b]]>
+                <![CDATA[org.testng.TestRunner@6b2dd3df]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dropdownTests(int)[pri:0, instance:com.herokuapp.internet.dropdowntest.DropdownTest@61df66b6]" started-at="2024-07-09T02:34:51 CDT" name="dropdownTests" finished-at="2024-07-09T02:34:52 CDT" duration-ms="1359" status="PASS">
+        <test-method signature="selectingTwoCheckBoxTest()[pri:0, instance:com.herokuapp.internet.checkboxtest.CheckBoxTest@61df66b6]" started-at="2024-07-10T01:00:14 CDT" name="selectingTwoCheckBoxTest" finished-at="2024-07-10T01:00:16 CDT" duration-ms="1580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectingTwoCheckBoxTest -->
+        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.checkboxtest.CheckBoxTest@61df66b6]" started-at="2024-07-10T01:00:16 CDT" name="shutDownDriver" finished-at="2024-07-10T01:00:16 CDT" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDownDriver -->
+      </class> <!-- com.herokuapp.internet.checkboxtest.CheckBoxTest -->
+    </test> <!-- CheckBoxesTests -->
+    <test started-at="2024-07-10T01:00:16 CDT" name="DragAndDropTests" finished-at="2024-07-10T01:00:21 CDT" duration-ms="4876">
+      <class name="com.herokuapp.internet.draganddroptest.DragAndDropTest">
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.draganddroptest.DragAndDropTest@57a3af25]" started-at="2024-07-10T01:00:16 CDT" name="setup" finished-at="2024-07-10T01:00:19 CDT" duration-ms="3053" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@4db77402]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="selectingTwoCheckBoxTest()[pri:0, instance:com.herokuapp.internet.draganddroptest.DragAndDropTest@57a3af25]" started-at="2024-07-10T01:00:19 CDT" name="selectingTwoCheckBoxTest" finished-at="2024-07-10T01:00:21 CDT" duration-ms="1612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectingTwoCheckBoxTest -->
+        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.draganddroptest.DragAndDropTest@57a3af25]" started-at="2024-07-10T01:00:21 CDT" name="shutDownDriver" finished-at="2024-07-10T01:00:21 CDT" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDownDriver -->
+      </class> <!-- com.herokuapp.internet.draganddroptest.DragAndDropTest -->
+    </test> <!-- DragAndDropTests -->
+    <test started-at="2024-07-10T01:00:21 CDT" name="DropDownTests_Val_1" finished-at="2024-07-10T01:00:27 CDT" duration-ms="5329">
+      <class name="com.herokuapp.internet.dropdowntest.DropdownTest">
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.dropdowntest.DropdownTest@1623b78d]" started-at="2024-07-10T01:00:21 CDT" name="setup" finished-at="2024-07-10T01:00:24 CDT" duration-ms="3152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@73c48264]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dropdownTests(int)[pri:0, instance:com.herokuapp.internet.dropdowntest.DropdownTest@1623b78d]" started-at="2024-07-10T01:00:24 CDT" name="dropdownTests" finished-at="2024-07-10T01:00:26 CDT" duration-ms="1968" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,15 +90,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dropdownTests -->
-        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.dropdowntest.DropdownTest@61df66b6]" started-at="2024-07-09T02:34:52 CDT" name="shutDownDriver" finished-at="2024-07-09T02:34:52 CDT" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.dropdowntest.DropdownTest@1623b78d]" started-at="2024-07-10T01:00:26 CDT" name="shutDownDriver" finished-at="2024-07-10T01:00:27 CDT" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutDownDriver -->
       </class> <!-- com.herokuapp.internet.dropdowntest.DropdownTest -->
     </test> <!-- DropDownTests_Val_1 -->
-    <test started-at="2024-07-09T02:34:52 CDT" name="DropDownTests_Val_2" finished-at="2024-07-09T02:34:57 CDT" duration-ms="4088">
+    <test started-at="2024-07-10T01:00:27 CDT" name="DropDownTests_Val_2" finished-at="2024-07-10T01:00:32 CDT" duration-ms="5658">
       <class name="com.herokuapp.internet.dropdowntest.DropdownTest">
-        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.dropdowntest.DropdownTest@7f3b84b8]" started-at="2024-07-09T02:34:52 CDT" name="setup" finished-at="2024-07-09T02:34:54 CDT" duration-ms="1570" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.dropdowntest.DropdownTest@4ec4f3a0]" started-at="2024-07-10T01:00:27 CDT" name="setup" finished-at="2024-07-10T01:00:30 CDT" duration-ms="3358" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,14 +107,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@49e5f737]]>
+                <![CDATA[org.testng.TestRunner@5ef85555]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dropdownTests(int)[pri:0, instance:com.herokuapp.internet.dropdowntest.DropdownTest@7f3b84b8]" started-at="2024-07-09T02:34:54 CDT" name="dropdownTests" finished-at="2024-07-09T02:34:56 CDT" duration-ms="2397" status="PASS">
+        <test-method signature="dropdownTests(int)[pri:0, instance:com.herokuapp.internet.dropdowntest.DropdownTest@4ec4f3a0]" started-at="2024-07-10T01:00:30 CDT" name="dropdownTests" finished-at="2024-07-10T01:00:32 CDT" duration-ms="2085" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,11 +125,391 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dropdownTests -->
-        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.dropdowntest.DropdownTest@7f3b84b8]" started-at="2024-07-09T02:34:56 CDT" name="shutDownDriver" finished-at="2024-07-09T02:34:57 CDT" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.dropdowntest.DropdownTest@4ec4f3a0]" started-at="2024-07-10T01:00:32 CDT" name="shutDownDriver" finished-at="2024-07-10T01:00:32 CDT" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutDownDriver -->
       </class> <!-- com.herokuapp.internet.dropdowntest.DropdownTest -->
     </test> <!-- DropDownTests_Val_2 -->
-  </suite> <!-- DropDownTestsSuite -->
+    <test started-at="2024-07-10T01:00:32 CDT" name="FileUploaderTest" finished-at="2024-07-10T01:00:38 CDT" duration-ms="5949">
+      <class name="com.herokuapp.internet.fileuploadtest.FileUploaderTest">
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.fileuploadtest.FileUploaderTest@1b7cc17c]" started-at="2024-07-10T01:00:32 CDT" name="setup" finished-at="2024-07-10T01:00:35 CDT" duration-ms="3249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5bcec67e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="fileUploaderTest()[pri:0, instance:com.herokuapp.internet.fileuploadtest.FileUploaderTest@1b7cc17c]" started-at="2024-07-10T01:00:35 CDT" name="fileUploaderTest" finished-at="2024-07-10T01:00:38 CDT" duration-ms="2480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUploaderTest -->
+        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.fileuploadtest.FileUploaderTest@1b7cc17c]" started-at="2024-07-10T01:00:38 CDT" name="shutDownDriver" finished-at="2024-07-10T01:00:38 CDT" duration-ms="212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDownDriver -->
+      </class> <!-- com.herokuapp.internet.fileuploadtest.FileUploaderTest -->
+    </test> <!-- FileUploaderTest -->
+    <test started-at="2024-07-10T01:00:38 CDT" name="JSAlertTest" finished-at="2024-07-10T01:00:58 CDT" duration-ms="19386">
+      <class name="com.herokuapp.internet.alerttest.AlertTest">
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.alerttest.AlertTest@747ddf94]" started-at="2024-07-10T01:00:38 CDT" name="setup" finished-at="2024-07-10T01:00:42 CDT" duration-ms="3348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2dafae61]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="jsAlertTest()[pri:0, instance:com.herokuapp.internet.alerttest.AlertTest@747ddf94]" started-at="2024-07-10T01:00:42 CDT" name="jsAlertTest" finished-at="2024-07-10T01:00:44 CDT" duration-ms="2802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsAlertTest -->
+        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.alerttest.AlertTest@747ddf94]" started-at="2024-07-10T01:00:44 CDT" name="shutDownDriver" finished-at="2024-07-10T01:00:45 CDT" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDownDriver -->
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.alerttest.AlertTest@747ddf94]" started-at="2024-07-10T01:00:45 CDT" name="setup" finished-at="2024-07-10T01:00:48 CDT" duration-ms="3296" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2dafae61]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="jsConfirmTest()[pri:0, instance:com.herokuapp.internet.alerttest.AlertTest@747ddf94]" started-at="2024-07-10T01:00:48 CDT" name="jsConfirmTest" finished-at="2024-07-10T01:00:50 CDT" duration-ms="2472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsConfirmTest -->
+        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.alerttest.AlertTest@747ddf94]" started-at="2024-07-10T01:00:50 CDT" name="shutDownDriver" finished-at="2024-07-10T01:00:51 CDT" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDownDriver -->
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.alerttest.AlertTest@747ddf94]" started-at="2024-07-10T01:00:51 CDT" name="setup" finished-at="2024-07-10T01:00:55 CDT" duration-ms="4139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2dafae61]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="jsPromptTest()[pri:0, instance:com.herokuapp.internet.alerttest.AlertTest@747ddf94]" started-at="2024-07-10T01:00:55 CDT" name="jsPromptTest" finished-at="2024-07-10T01:00:57 CDT" duration-ms="2560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsPromptTest -->
+        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.alerttest.AlertTest@747ddf94]" started-at="2024-07-10T01:00:57 CDT" name="shutDownDriver" finished-at="2024-07-10T01:00:58 CDT" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDownDriver -->
+      </class> <!-- com.herokuapp.internet.alerttest.AlertTest -->
+    </test> <!-- JSAlertTest -->
+    <test started-at="2024-07-10T01:00:58 CDT" name="JSErrorTest" finished-at="2024-07-10T01:01:03 CDT" duration-ms="5685">
+      <class name="com.herokuapp.internet.jserrortest.JSErrorTest">
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.jserrortest.JSErrorTest@351d00c0]" started-at="2024-07-10T01:00:58 CDT" name="setup" finished-at="2024-07-10T01:01:01 CDT" duration-ms="3868" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@7a2fce12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="keyPressesTest()[pri:0, instance:com.herokuapp.internet.jserrortest.JSErrorTest@351d00c0]" started-at="2024-07-10T01:01:01 CDT" name="keyPressesTest" finished-at="2024-07-10T01:01:03 CDT" duration-ms="1586" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+SEVERE ERROR: https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=https%3A%2F%2Fthe-internet.herokuapp.com%2F&u=oeu1720591262859r0.29430429985959794&wxhr=true&t=1720591262867&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED,
+SEVERE ERROR: https://the-internet.herokuapp.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found),
+SEVERE ERROR: https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=engagement&g=298283957&u=oeu1720591262859r0.29430429985959794&wxhr=true&t=1720591263330&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED,
+SEVERE ERROR: https://the-internet.herokuapp.com/javascript_error 6:51 Uncaught TypeError: Cannot read properties of undefined (reading 'xyz')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+SEVERE ERROR: https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=https%3A%2F%2Fthe-internet.herokuapp.com%2F&u=oeu1720591262859r0.29430429985959794&wxhr=true&t=1720591262867&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED,
+SEVERE ERROR: https://the-internet.herokuapp.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found),
+SEVERE ERROR: https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=engagement&g=298283957&u=oeu1720591262859r0.29430429985959794&wxhr=true&t=1720591263330&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED,
+SEVERE ERROR: https://the-internet.herokuapp.com/javascript_error 6:51 Uncaught TypeError: Cannot read properties of undefined (reading 'xyz')
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.herokuapp.internet.jserrortest.JSErrorTest.keyPressesTest(JSErrorTest.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyPressesTest -->
+        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.jserrortest.JSErrorTest@351d00c0]" started-at="2024-07-10T01:01:03 CDT" name="shutDownDriver" finished-at="2024-07-10T01:01:03 CDT" duration-ms="223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDownDriver -->
+      </class> <!-- com.herokuapp.internet.jserrortest.JSErrorTest -->
+    </test> <!-- JSErrorTest -->
+    <test started-at="2024-07-10T01:01:03 CDT" name="KeyPressesTest" finished-at="2024-07-10T01:01:09 CDT" duration-ms="5833">
+      <class name="com.herokuapp.internet.keypressestest.KeyPressesTest">
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.keypressestest.KeyPressesTest@18078bef]" started-at="2024-07-10T01:01:03 CDT" name="setup" finished-at="2024-07-10T01:01:07 CDT" duration-ms="3844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@66e17eff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="keyPressesTest()[pri:0, instance:com.herokuapp.internet.keypressestest.KeyPressesTest@18078bef]" started-at="2024-07-10T01:01:07 CDT" name="keyPressesTest" finished-at="2024-07-10T01:01:09 CDT" duration-ms="1735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyPressesTest -->
+        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.keypressestest.KeyPressesTest@18078bef]" started-at="2024-07-10T01:01:09 CDT" name="shutDownDriver" finished-at="2024-07-10T01:01:09 CDT" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDownDriver -->
+      </class> <!-- com.herokuapp.internet.keypressestest.KeyPressesTest -->
+    </test> <!-- KeyPressesTest -->
+    <test started-at="2024-07-10T01:01:09 CDT" name="MultipleWindowsTest" finished-at="2024-07-10T01:01:16 CDT" duration-ms="6542">
+      <class name="com.herokuapp.internet.multiplewindowstest.MultipleWindowsTest">
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.multiplewindowstest.MultipleWindowsTest@4562e04d]" started-at="2024-07-10T01:01:09 CDT" name="setup" finished-at="2024-07-10T01:01:13 CDT" duration-ms="3842" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@4bb1b96b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="MultipleWindowTest()[pri:0, instance:com.herokuapp.internet.multiplewindowstest.MultipleWindowsTest@4562e04d]" started-at="2024-07-10T01:01:13 CDT" name="MultipleWindowTest" finished-at="2024-07-10T01:01:15 CDT" duration-ms="2468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MultipleWindowTest -->
+        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.multiplewindowstest.MultipleWindowsTest@4562e04d]" started-at="2024-07-10T01:01:15 CDT" name="shutDownDriver" finished-at="2024-07-10T01:01:16 CDT" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDownDriver -->
+      </class> <!-- com.herokuapp.internet.multiplewindowstest.MultipleWindowsTest -->
+    </test> <!-- MultipleWindowsTest -->
+    <test started-at="2024-07-10T01:01:16 CDT" name="NegativeLoginTest-DD" finished-at="2024-07-10T01:01:23 CDT" duration-ms="7568">
+      <class name="com.herokuapp.internet.logintest.NegativeLoginTests">
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.logintest.NegativeLoginTests@2a4fb17b]" started-at="2024-07-10T01:01:16 CDT" name="setup" finished-at="2024-07-10T01:01:19 CDT" duration-ms="3663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@1bbddada]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="negativeTests(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.herokuapp.internet.logintest.NegativeLoginTests@2a4fb17b]" started-at="2024-07-10T01:01:19 CDT" name="negativeTests" finished-at="2024-07-10T01:01:23 CDT" duration-ms="3672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[incorrectUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your username is invalid!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeTests -->
+        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.logintest.NegativeLoginTests@2a4fb17b]" started-at="2024-07-10T01:01:23 CDT" name="shutDownDriver" finished-at="2024-07-10T01:01:23 CDT" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDownDriver -->
+      </class> <!-- com.herokuapp.internet.logintest.NegativeLoginTests -->
+    </test> <!-- NegativeLoginTest-DD -->
+    <test started-at="2024-07-10T01:01:23 CDT" name="NegativeLoginTest-DC" finished-at="2024-07-10T01:02:05 CDT" duration-ms="42125">
+      <class name="com.herokuapp.internet.logintest.NegativeLoginTests">
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.logintest.NegativeLoginTests@128d2484]" started-at="2024-07-10T01:01:23 CDT" name="setup" finished-at="2024-07-10T01:02:01 CDT" duration-ms="37535" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@1f66d8e1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="negativeTests(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.herokuapp.internet.logintest.NegativeLoginTests@128d2484]" started-at="2024-07-10T01:02:01 CDT" name="negativeTests" finished-at="2024-07-10T01:02:03 CDT" duration-ms="2622" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[IncorrectPassword]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Your password is invalid!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeTests -->
+        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.logintest.NegativeLoginTests@128d2484]" started-at="2024-07-10T01:02:03 CDT" name="shutDownDriver" finished-at="2024-07-10T01:02:05 CDT" duration-ms="1964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDownDriver -->
+      </class> <!-- com.herokuapp.internet.logintest.NegativeLoginTests -->
+    </test> <!-- NegativeLoginTest-DC -->
+    <test started-at="2024-07-10T01:02:05 CDT" name="PositiveLoginTest" finished-at="2024-07-10T01:02:14 CDT" duration-ms="8512">
+      <class name="com.herokuapp.internet.logintest.PositiveLoginTests">
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.logintest.PositiveLoginTests@692f203f]" started-at="2024-07-10T01:02:05 CDT" name="setup" finished-at="2024-07-10T01:02:09 CDT" duration-ms="3339" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@721d5b74]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:0, instance:com.herokuapp.internet.logintest.PositiveLoginTests@692f203f]" started-at="2024-07-10T01:02:09 CDT" name="loginTest" finished-at="2024-07-10T01:02:13 CDT" duration-ms="4659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.logintest.PositiveLoginTests@692f203f]" started-at="2024-07-10T01:02:13 CDT" name="shutDownDriver" finished-at="2024-07-10T01:02:14 CDT" duration-ms="509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDownDriver -->
+      </class> <!-- com.herokuapp.internet.logintest.PositiveLoginTests -->
+    </test> <!-- PositiveLoginTest -->
+    <test started-at="2024-07-10T01:02:14 CDT" name="WYSIWYGEditorTest" finished-at="2024-07-10T01:02:21 CDT" duration-ms="7108">
+      <class name="com.herokuapp.internet.WYSIWYGeditortest.WYSIWYGEditorTest">
+        <test-method is-config="true" signature="setup(java.lang.String,org.testng.ITestContext)[pri:0, instance:com.herokuapp.internet.WYSIWYGeditortest.WYSIWYGEditorTest@55141def]" started-at="2024-07-10T01:02:14 CDT" name="setup" finished-at="2024-07-10T01:02:18 CDT" duration-ms="3700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3421debd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="editorTest()[pri:0, instance:com.herokuapp.internet.WYSIWYGeditortest.WYSIWYGEditorTest@55141def]" started-at="2024-07-10T01:02:18 CDT" name="editorTest" finished-at="2024-07-10T01:02:21 CDT" duration-ms="3189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editorTest -->
+        <test-method is-config="true" signature="shutDownDriver()[pri:0, instance:com.herokuapp.internet.WYSIWYGeditortest.WYSIWYGEditorTest@55141def]" started-at="2024-07-10T01:02:21 CDT" name="shutDownDriver" finished-at="2024-07-10T01:02:21 CDT" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDownDriver -->
+      </class> <!-- com.herokuapp.internet.WYSIWYGeditortest.WYSIWYGEditorTest -->
+    </test> <!-- WYSIWYGEditorTest -->
+  </suite> <!-- FullTestSuite -->
 </testng-results>

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.herokuapp.internet.loginTest.PositiveLoginTests">
+      <class name="com.herokuapp.internet.fileuploadtest.FileUploaderTest">
         <methods>
           <include name="setup"/>
-          <include name="loginTest"/>
+          <include name="fileUploaderTest"/>
           <include name="shutDownDriver"/>
         </methods>
-      </class> <!-- com.herokuapp.internet.loginTest.PositiveLoginTests -->
+      </class> <!-- com.herokuapp.internet.fileuploadtest.FileUploaderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-DropDownTestsSuite" class="navigator-link">
-              <span class="suite-name border-passed">DropDownTestsSuite</span>
+            <a href="#" panel-name="suite-FullTestSuite" class="navigator-link">
+              <span class="suite-name border-failed">FullTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-DropDownTestsSuite" class="navigator-link ">
-                    <span>DropDownTests.xml</span>
+                  <a href="#" panel-name="test-xml-FullTestSuite" class="navigator-link ">
+                    <span>FullTests.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-DropDownTestsSuite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                  <a href="#" panel-name="testlist-FullTestSuite" class="navigator-link ">
+                    <span class="test-stats">13 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-DropDownTestsSuite" class="navigator-link ">
+                  <a href="#" panel-name="group-FullTestSuite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-DropDownTestsSuite" class="navigator-link ">
+                  <a href="#" panel-name="times-FullTestSuite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-DropDownTestsSuite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-FullTestSuite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-DropDownTestsSuite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-FullTestSuite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-DropDownTestsSuite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-FullTestSuite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,26 +92,100 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">15 methods, 1 failed,   14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-FullTestSuite" class="hide-methods failed suite-FullTestSuite"> (hide)</a> <!-- hide-methods failed suite-FullTestSuite -->
+                      <a href="#" panel-name="suite-FullTestSuite" class="show-methods failed suite-FullTestSuite"> (show)</a> <!-- show-methods failed suite-FullTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-FullTestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullTestSuite" title="com.herokuapp.internet.jserrortest.JSErrorTest" class="method navigator-link" hash-for-method="keyPressesTest">keyPressesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-FullTestSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-DropDownTestsSuite" class="hide-methods passed suite-DropDownTestsSuite"> (hide)</a> <!-- hide-methods passed suite-DropDownTestsSuite -->
-                      <a href="#" panel-name="suite-DropDownTestsSuite" class="show-methods passed suite-DropDownTestsSuite"> (show)</a> <!-- show-methods passed suite-DropDownTestsSuite -->
+                      <a href="#" panel-name="suite-FullTestSuite" class="hide-methods passed suite-FullTestSuite"> (hide)</a> <!-- hide-methods passed suite-FullTestSuite -->
+                      <a href="#" panel-name="suite-FullTestSuite" class="show-methods passed suite-FullTestSuite"> (show)</a> <!-- show-methods passed suite-FullTestSuite -->
                     </span>
-                    <div class="method-list-content passed suite-DropDownTestsSuite">
+                    <div class="method-list-content passed suite-FullTestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-DropDownTestsSuite" title="com.herokuapp.internet.dropdowntest.DropdownTest" class="method navigator-link" hash-for-method="dropdownTests(1)">dropdownTests(1)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-FullTestSuite" title="com.herokuapp.internet.multiplewindowstest.MultipleWindowsTest" class="method navigator-link" hash-for-method="MultipleWindowTest">MultipleWindowTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-DropDownTestsSuite" title="com.herokuapp.internet.dropdowntest.DropdownTest" class="method navigator-link" hash-for-method="dropdownTests(2)">dropdownTests(2)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-FullTestSuite" title="com.herokuapp.internet.dropdowntest.DropdownTest" class="method navigator-link" hash-for-method="dropdownTests(1)">dropdownTests(1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-DropDownTestsSuite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullTestSuite" title="com.herokuapp.internet.dropdowntest.DropdownTest" class="method navigator-link" hash-for-method="dropdownTests(2)">dropdownTests(2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullTestSuite" title="com.herokuapp.internet.WYSIWYGeditortest.WYSIWYGEditorTest" class="method navigator-link" hash-for-method="editorTest">editorTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullTestSuite" title="com.herokuapp.internet.fileuploadtest.FileUploaderTest" class="method navigator-link" hash-for-method="fileUploaderTest">fileUploaderTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullTestSuite" title="com.herokuapp.internet.alerttest.AlertTest" class="method navigator-link" hash-for-method="jsAlertTest">jsAlertTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullTestSuite" title="com.herokuapp.internet.alerttest.AlertTest" class="method navigator-link" hash-for-method="jsConfirmTest">jsConfirmTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullTestSuite" title="com.herokuapp.internet.alerttest.AlertTest" class="method navigator-link" hash-for-method="jsPromptTest">jsPromptTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullTestSuite" title="com.herokuapp.internet.keypressestest.KeyPressesTest" class="method navigator-link" hash-for-method="keyPressesTest">keyPressesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullTestSuite" title="com.herokuapp.internet.logintest.PositiveLoginTests" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullTestSuite" title="com.herokuapp.internet.logintest.NegativeLoginTests" class="method navigator-link" hash-for-method="negativeTests(incorrectUsername, SuperSecretPassword!, Your username is invalid!)">negativeTests(incorrectUsername, SuperSecretPassword!, Your username is invalid!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullTestSuite" title="com.herokuapp.internet.logintest.NegativeLoginTests" class="method navigator-link" hash-for-method="negativeTests(tomsmith, IncorrectPassword, Your password is invalid!)">negativeTests(tomsmith, IncorrectPassword, Your password is invalid!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullTestSuite" title="com.herokuapp.internet.checkboxtest.CheckBoxTest" class="method navigator-link" hash-for-method="selectingTwoCheckBoxTest">selectingTwoCheckBoxTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FullTestSuite" title="com.herokuapp.internet.draganddroptest.DragAndDropTest" class="method navigator-link" hash-for-method="selectingTwoCheckBoxTest">selectingTwoCheckBoxTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-FullTestSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,8 +196,146 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-DropDownTestsSuite" class="panel DropDownTestsSuite">
-          <div class="suite-DropDownTestsSuite-class-passed">
+        <div panel-name="suite-FullTestSuite" class="panel FullTestSuite">
+          <div class="suite-FullTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.herokuapp.internet.jserrortest.JSErrorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="keyPressesTest">
+                  </a> <!-- keyPressesTest -->
+                  <span class="method-name">keyPressesTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	SEVERE ERROR: https://298279967.log.optimizely.com/event?a=298279967&amp;d=298279967&amp;y=false&amp;n=https%3A%2F%2Fthe-internet.herokuapp.com%2F&amp;u=oeu1720591262859r0.29430429985959794&amp;wxhr=true&amp;t=1720591262867&amp;f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED,
+	SEVERE ERROR: https://the-internet.herokuapp.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found),
+	SEVERE ERROR: https://298279967.log.optimizely.com/event?a=298279967&amp;d=298279967&amp;y=false&amp;n=engagement&amp;g=298283957&amp;u=oeu1720591262859r0.29430429985959794&amp;wxhr=true&amp;t=1720591263330&amp;f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED,
+	SEVERE ERROR: https://the-internet.herokuapp.com/javascript_error 6:51 Uncaught TypeError: Cannot read properties of undefined (reading &apos;xyz&apos;)
+	at com.herokuapp.internet.jserrortest.JSErrorTest.keyPressesTest(JSErrorTest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullTestSuite-class-failed -->
+          <div class="suite-FullTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.herokuapp.internet.draganddroptest.DragAndDropTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectingTwoCheckBoxTest">
+                  </a> <!-- selectingTwoCheckBoxTest -->
+                  <span class="method-name">selectingTwoCheckBoxTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullTestSuite-class-passed -->
+          <div class="suite-FullTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.herokuapp.internet.logintest.NegativeLoginTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeTests(incorrectUsername, SuperSecretPassword!, Your username is invalid!)">
+                  </a> <!-- negativeTests(incorrectUsername, SuperSecretPassword!, Your username is invalid!) -->
+                  <span class="method-name">negativeTests</span>
+                  <span class="parameters">(incorrectUsername,SuperSecretPassword!,Your username is invalid!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeTests(tomsmith, IncorrectPassword, Your password is invalid!)">
+                  </a> <!-- negativeTests(tomsmith, IncorrectPassword, Your password is invalid!) -->
+                  <span class="method-name">negativeTests</span>
+                  <span class="parameters">(tomsmith,IncorrectPassword,Your password is invalid!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullTestSuite-class-passed -->
+          <div class="suite-FullTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.herokuapp.internet.checkboxtest.CheckBoxTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectingTwoCheckBoxTest">
+                  </a> <!-- selectingTwoCheckBoxTest -->
+                  <span class="method-name">selectingTwoCheckBoxTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullTestSuite-class-passed -->
+          <div class="suite-FullTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.herokuapp.internet.WYSIWYGeditortest.WYSIWYGEditorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editorTest">
+                  </a> <!-- editorTest -->
+                  <span class="method-name">editorTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullTestSuite-class-passed -->
+          <div class="suite-FullTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.herokuapp.internet.multiplewindowstest.MultipleWindowsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MultipleWindowTest">
+                  </a> <!-- MultipleWindowTest -->
+                  <span class="method-name">MultipleWindowTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullTestSuite-class-passed -->
+          <div class="suite-FullTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.herokuapp.internet.logintest.PositiveLoginTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullTestSuite-class-passed -->
+          <div class="suite-FullTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.herokuapp.internet.fileuploadtest.FileUploaderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fileUploaderTest">
+                  </a> <!-- fileUploaderTest -->
+                  <span class="method-name">fileUploaderTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullTestSuite-class-passed -->
+          <div class="suite-FullTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.herokuapp.internet.dropdowntest.DropdownTest</span>
@@ -146,134 +358,523 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-DropDownTestsSuite-class-passed -->
-        </div> <!-- panel DropDownTestsSuite -->
-        <div panel-name="test-xml-DropDownTestsSuite" class="panel">
+          </div> <!-- suite-FullTestSuite-class-passed -->
+          <div class="suite-FullTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.herokuapp.internet.alerttest.AlertTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="jsAlertTest">
+                  </a> <!-- jsAlertTest -->
+                  <span class="method-name">jsAlertTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="jsConfirmTest">
+                  </a> <!-- jsConfirmTest -->
+                  <span class="method-name">jsConfirmTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="jsPromptTest">
+                  </a> <!-- jsPromptTest -->
+                  <span class="method-name">jsPromptTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullTestSuite-class-passed -->
+          <div class="suite-FullTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.herokuapp.internet.keypressestest.KeyPressesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="keyPressesTest">
+                  </a> <!-- keyPressesTest -->
+                  <span class="method-name">keyPressesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullTestSuite-class-passed -->
+        </div> <!-- panel FullTestSuite -->
+        <div panel-name="test-xml-FullTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/junghoonseo/Desktop/selenium-automation-project/selenium-project/src/test/resources/TestSuites/IndividualTestSuites/DropDownTests.xml</span>
+            <span class="header-content">/Users/junghoonseo/Desktop/selenium-automation-project/selenium-project/src/test/resources/TestSuites/FullTests.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;DropDownTestsSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;DropDownTests_Val_1&quot;&gt;
+&lt;suite name=&quot;FullTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;CheckBoxesTests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.herokuapp.internet.checkboxtest.CheckBoxTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CheckBoxesTests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;DragAndDropTests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.herokuapp.internet.draganddroptest.DragAndDropTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DragAndDropTests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;DropDownTests_Val_1&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;parameter name=&quot;selectOption&quot; value=&quot;1&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.herokuapp.internet.dropdowntest.DropdownTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- DropDownTests_Val_1 --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;DropDownTests_Val_2&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;DropDownTests_Val_2&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;parameter name=&quot;selectOption&quot; value=&quot;2&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.herokuapp.internet.dropdowntest.DropdownTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- DropDownTests_Val_2 --&gt;
-&lt;/suite&gt; &lt;!-- DropDownTestsSuite --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;FileUploaderTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.herokuapp.internet.fileuploadtest.FileUploaderTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FileUploaderTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;JSAlertTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.herokuapp.internet.alerttest.AlertTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- JSAlertTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;JSErrorTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.herokuapp.internet.jserrortest.JSErrorTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- JSErrorTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;KeyPressesTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.herokuapp.internet.keypressestest.KeyPressesTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- KeyPressesTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;MultipleWindowsTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.herokuapp.internet.multiplewindowstest.MultipleWindowsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- MultipleWindowsTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;NegativeLoginTest-DD&quot;&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;SuperSecretPassword!&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;expectedMessage&quot; value=&quot;Your username is invalid!&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;incorrectUsername&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.herokuapp.internet.logintest.NegativeLoginTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- NegativeLoginTest-DD --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;NegativeLoginTest-DC&quot;&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;IncorrectPassword&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;expectedMessage&quot; value=&quot;Your password is invalid!&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;tomsmith&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.herokuapp.internet.logintest.NegativeLoginTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- NegativeLoginTest-DC --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;PositiveLoginTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.herokuapp.internet.logintest.PositiveLoginTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PositiveLoginTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;WYSIWYGEditorTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.herokuapp.internet.WYSIWYGeditortest.WYSIWYGEditorTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- WYSIWYGEditorTest --&gt;
+&lt;/suite&gt; &lt;!-- FullTestSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-DropDownTestsSuite" class="panel">
+        <div panel-name="testlist-FullTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for DropDownTestsSuite</span>
+            <span class="header-content">Tests for FullTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
+              <li>
+                <span class="test-name">CheckBoxesTests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">DragAndDropTests (1 class)</span>
+              </li>
               <li>
                 <span class="test-name">DropDownTests_Val_1 (1 class)</span>
               </li>
               <li>
                 <span class="test-name">DropDownTests_Val_2 (1 class)</span>
               </li>
+              <li>
+                <span class="test-name">FileUploaderTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">JSAlertTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">JSErrorTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">KeyPressesTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">MultipleWindowsTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">NegativeLoginTest-DD (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">NegativeLoginTest-DC (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">PositiveLoginTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">WYSIWYGEditorTest (1 class)</span>
+              </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-DropDownTestsSuite" class="panel">
+        <div panel-name="group-FullTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for DropDownTestsSuite</span>
+            <span class="header-content">Groups for FullTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-DropDownTestsSuite" class="panel">
+        <div panel-name="times-FullTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for DropDownTestsSuite</span>
+            <span class="header-content">Times for FullTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_DropDownTestsSuite');
-function tableData_DropDownTestsSuite() {
+suiteTableInitFunctions.push('tableData_FullTestSuite');
+function tableData_FullTestSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'dropdownTests')
-data.setCell(0, 2, 'com.herokuapp.internet.dropdowntest.DropdownTest')
-data.setCell(0, 3, 2397);
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'com.herokuapp.internet.logintest.PositiveLoginTests')
+data.setCell(0, 3, 4659);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'dropdownTests')
-data.setCell(1, 2, 'com.herokuapp.internet.dropdowntest.DropdownTest')
-data.setCell(1, 3, 1359);
-window.suiteTableData['DropDownTestsSuite']= { tableData: data, tableDiv: 'times-div-DropDownTestsSuite'}
+data.setCell(1, 1, 'negativeTests')
+data.setCell(1, 2, 'com.herokuapp.internet.logintest.NegativeLoginTests')
+data.setCell(1, 3, 3672);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'editorTest')
+data.setCell(2, 2, 'com.herokuapp.internet.WYSIWYGeditortest.WYSIWYGEditorTest')
+data.setCell(2, 3, 3189);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'jsAlertTest')
+data.setCell(3, 2, 'com.herokuapp.internet.alerttest.AlertTest')
+data.setCell(3, 3, 2802);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'negativeTests')
+data.setCell(4, 2, 'com.herokuapp.internet.logintest.NegativeLoginTests')
+data.setCell(4, 3, 2622);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'jsPromptTest')
+data.setCell(5, 2, 'com.herokuapp.internet.alerttest.AlertTest')
+data.setCell(5, 3, 2560);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'fileUploaderTest')
+data.setCell(6, 2, 'com.herokuapp.internet.fileuploadtest.FileUploaderTest')
+data.setCell(6, 3, 2480);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'jsConfirmTest')
+data.setCell(7, 2, 'com.herokuapp.internet.alerttest.AlertTest')
+data.setCell(7, 3, 2472);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'MultipleWindowTest')
+data.setCell(8, 2, 'com.herokuapp.internet.multiplewindowstest.MultipleWindowsTest')
+data.setCell(8, 3, 2468);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'dropdownTests')
+data.setCell(9, 2, 'com.herokuapp.internet.dropdowntest.DropdownTest')
+data.setCell(9, 3, 2085);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'dropdownTests')
+data.setCell(10, 2, 'com.herokuapp.internet.dropdowntest.DropdownTest')
+data.setCell(10, 3, 1968);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'keyPressesTest')
+data.setCell(11, 2, 'com.herokuapp.internet.keypressestest.KeyPressesTest')
+data.setCell(11, 3, 1735);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'selectingTwoCheckBoxTest')
+data.setCell(12, 2, 'com.herokuapp.internet.draganddroptest.DragAndDropTest')
+data.setCell(12, 3, 1612);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'keyPressesTest')
+data.setCell(13, 2, 'com.herokuapp.internet.jserrortest.JSErrorTest')
+data.setCell(13, 3, 1586);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'selectingTwoCheckBoxTest')
+data.setCell(14, 2, 'com.herokuapp.internet.checkboxtest.CheckBoxTest')
+data.setCell(14, 3, 1580);
+window.suiteTableData['FullTestSuite']= { tableData: data, tableDiv: 'times-div-FullTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
-              <div id="times-div-DropDownTestsSuite">
-              </div> <!-- times-div-DropDownTestsSuite -->
+              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <div id="times-div-FullTestSuite">
+              </div> <!-- times-div-FullTestSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-DropDownTestsSuite" class="panel">
+        <div panel-name="reporter-FullTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for DropDownTestsSuite</span>
+            <span class="header-content">Reporter output for FullTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-DropDownTestsSuite" class="panel">
+        <div panel-name="ignored-methods-FullTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-DropDownTestsSuite" class="panel">
+        <div panel-name="chronological-FullTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.herokuapp.internet.dropdowntest.DropdownTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.herokuapp.internet.checkboxtest.CheckBoxTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup(chrome, org.testng.TestRunner@445b295b)</span>
+                <span class="method-name">setup(chrome, org.testng.TestRunner@6b2dd3df)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">dropdownTests(1)</span>
-                <span class="method-start">2419 ms</span>
+                <span class="method-name">selectingTwoCheckBoxTest</span>
+                <span class="method-start">4941 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">shutDownDriver</span>
-                <span class="method-start">3780 ms</span>
+                <span class="method-start">6526 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.herokuapp.internet.draganddroptest.DragAndDropTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome, org.testng.TestRunner@4db77402)</span>
+                <span class="method-start">6782 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selectingTwoCheckBoxTest</span>
+                <span class="method-start">9835 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">shutDownDriver</span>
+                <span class="method-start">11450 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.herokuapp.internet.dropdowntest.DropdownTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome, org.testng.TestRunner@73c48264)</span>
+                <span class="method-start">11663 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dropdownTests(1)</span>
+                <span class="method-start">14816 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">shutDownDriver</span>
+                <span class="method-start">16786 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(chrome, org.testng.TestRunner@49e5f737)</span>
-                <span class="method-start">3918 ms</span>
+                <span class="method-name">setup(chrome, org.testng.TestRunner@5ef85555)</span>
+                <span class="method-start">16999 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">dropdownTests(2)</span>
-                <span class="method-start">5489 ms</span>
+                <span class="method-start">20357 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">shutDownDriver</span>
-                <span class="method-start">7887 ms</span>
+                <span class="method-start">22444 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.herokuapp.internet.fileuploadtest.FileUploaderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome, org.testng.TestRunner@5bcec67e)</span>
+                <span class="method-start">22665 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fileUploaderTest</span>
+                <span class="method-start">25915 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">shutDownDriver</span>
+                <span class="method-start">28398 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.herokuapp.internet.alerttest.AlertTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome, org.testng.TestRunner@2dafae61)</span>
+                <span class="method-start">28622 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">jsAlertTest</span>
+                <span class="method-start">31970 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">shutDownDriver</span>
+                <span class="method-start">34774 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome, org.testng.TestRunner@2dafae61)</span>
+                <span class="method-start">35073 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">jsConfirmTest</span>
+                <span class="method-start">38369 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">shutDownDriver</span>
+                <span class="method-start">40843 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome, org.testng.TestRunner@2dafae61)</span>
+                <span class="method-start">41065 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">jsPromptTest</span>
+                <span class="method-start">45204 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">shutDownDriver</span>
+                <span class="method-start">47766 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.herokuapp.internet.jserrortest.JSErrorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome, org.testng.TestRunner@7a2fce12)</span>
+                <span class="method-start">48017 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">keyPressesTest</span>
+                <span class="method-start">51885 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">shutDownDriver</span>
+                <span class="method-start">53476 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.herokuapp.internet.keypressestest.KeyPressesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome, org.testng.TestRunner@66e17eff)</span>
+                <span class="method-start">53719 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">keyPressesTest</span>
+                <span class="method-start">57564 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">shutDownDriver</span>
+                <span class="method-start">59301 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.herokuapp.internet.multiplewindowstest.MultipleWindowsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome, org.testng.TestRunner@4bb1b96b)</span>
+                <span class="method-start">59560 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MultipleWindowTest</span>
+                <span class="method-start">63402 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">shutDownDriver</span>
+                <span class="method-start">65872 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.herokuapp.internet.logintest.NegativeLoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome, org.testng.TestRunner@1bbddada)</span>
+                <span class="method-start">66112 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">negativeTests(incorrectUsername, SuperSecretPassword!, Your username is invalid!)</span>
+                <span class="method-start">69775 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">shutDownDriver</span>
+                <span class="method-start">73449 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox, org.testng.TestRunner@1f66d8e1)</span>
+                <span class="method-start">73686 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">negativeTests(tomsmith, IncorrectPassword, Your password is invalid!)</span>
+                <span class="method-start">111221 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">shutDownDriver</span>
+                <span class="method-start">113844 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.herokuapp.internet.logintest.PositiveLoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome, org.testng.TestRunner@721d5b74)</span>
+                <span class="method-start">115816 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">119156 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">shutDownDriver</span>
+                <span class="method-start">123817 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.herokuapp.internet.WYSIWYGeditortest.WYSIWYGEditorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome, org.testng.TestRunner@3421debd)</span>
+                <span class="method-start">124338 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editorTest</span>
+                <span class="method-start">128038 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">shutDownDriver</span>
+                <span class="method-start">131229 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

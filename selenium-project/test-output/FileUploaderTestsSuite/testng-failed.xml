@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FileUploaderTestsSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="FileUploaderTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.herokuapp.internet.fileuploadtest.FileUploaderTest">
+        <methods>
+          <include name="setup"/>
+          <include name="fileUploaderTest"/>
+          <include name="shutDownDriver"/>
+        </methods>
+      </class> <!-- com.herokuapp.internet.fileuploadtest.FileUploaderTest -->
+    </classes>
+  </test> <!-- FileUploaderTest(failed) -->
+</suite> <!-- Failed suite [FileUploaderTestsSuite] -->

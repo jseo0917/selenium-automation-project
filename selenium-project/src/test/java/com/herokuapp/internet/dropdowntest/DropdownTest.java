@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.herokuapp.internet.base.TestUtilities;
 import com.herokuapp.internet.pages.DropdownPage;
-import com.herokuapp.internet.pages.WelcomePageObject;
+import com.herokuapp.internet.pages.WelcomePage;
 
 public class DropdownTest extends TestUtilities {
 	
@@ -20,7 +20,7 @@ public class DropdownTest extends TestUtilities {
 		 * access to welcome page
 		 *************************/
 		
-		WelcomePageObject welcomePageObject = new WelcomePageObject(driver, log);
+		WelcomePage welcomePageObject = new WelcomePage(driver, log);
 		
 		welcomePageObject.openPage();
 		

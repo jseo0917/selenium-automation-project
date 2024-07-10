@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import com.herokuapp.internet.base.TestUtilities;
 import com.herokuapp.internet.pages.CheckboxesPage;
-import com.herokuapp.internet.pages.WelcomePageObject;
+import com.herokuapp.internet.pages.WelcomePage;
 
 public class CheckBoxTest extends TestUtilities {
 
@@ -18,7 +18,7 @@ public class CheckBoxTest extends TestUtilities {
 		 * access to welcome page
 		 *************************/
 		
-		WelcomePageObject welcomePage = new WelcomePageObject(driver, log);
+		WelcomePage welcomePage = new WelcomePage(driver, log);
 		
 		welcomePage.openPage();
 		

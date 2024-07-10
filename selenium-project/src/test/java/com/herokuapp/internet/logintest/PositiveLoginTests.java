@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import com.herokuapp.internet.base.TestUtilities;
 import com.herokuapp.internet.pages.LoginPage;
 import com.herokuapp.internet.pages.SecureAreaPage;
-import com.herokuapp.internet.pages.WelcomePageObject;
+import com.herokuapp.internet.pages.WelcomePage;
 
 public class PositiveLoginTests extends TestUtilities {
 
@@ -24,7 +24,7 @@ public class PositiveLoginTests extends TestUtilities {
 		 * ACCESS TO WELCOME PAGE
 		 *************************/
 		
-		WelcomePageObject welcomePageObject = new WelcomePageObject(driver, log);
+		WelcomePage welcomePageObject = new WelcomePage(driver, log);
 		
 		welcomePageObject.openPage();
 		

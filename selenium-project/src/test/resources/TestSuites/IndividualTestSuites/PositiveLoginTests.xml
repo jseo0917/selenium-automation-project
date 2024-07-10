@@ -4,7 +4,7 @@
   <test name="PositiveLoginTest">  
   	<parameter name="browser" value="chrome"></parameter>
     <classes>
-       <class name="com.herokuapp.internet.loginTest.PositiveLoginTests"/>
+       <class name="com.herokuapp.internet.logintest.PositiveLoginTests"/>
     </classes>
   </test>  
 </suite>
